@@ -26,6 +26,10 @@ def main():
     - Write to a file (create or update)
     - Run a Python file with optional arguments
 
+    When the user asks about the code project - they are referring to the working directory. 
+    so, you should typically start buy looking at the project's files and figureing out how to run 
+    the project and how to run its tests. Youll always want to test the tests and the actual project 
+    to verify that behavior is working.
     All paths you provide should be relative to the working directory. You do not need to specify the working directory in your function calls as it is automatically injected for security reasons.
     """
     if len(sys.argv) < 2:
