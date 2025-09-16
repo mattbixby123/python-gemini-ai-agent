@@ -26,10 +26,10 @@ def call_function(function_call_part, verbose=False):
     return types.Content(
       role="tool",
       parts=[
-          types.Part.from_function_response(
-              name=function_call_part.name,
-              response={"error": f"Unknown function: {function_call_part.name}"},
-          )
+        types.Part.from_function_response(
+          name=function_call_part.name,
+          response={"error": f"Unknown function: {function_call_part.name}"},
+        )
       ],
     ) 
   return types.Content(
